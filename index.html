@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo com videogames</title>
+    <style>
+        /* Estilos básicos para o corpo imitar o fundo escuro do Figma */
+        body {
+            background-color: #1E1E1E;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* O container principal azul */
+        .card-azul {
+            background-color: #24a1db; /* Tom de azul aproximado da imagem */
+            color: #ffffff;
+            width: 100%;
+            max-width: 950px;
+            padding: 50px 60px;
+            box-sizing: border-box;
+        }
+
+        /* Título principal */
+        .card-azul h1 {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 40px;
+            line-height: 1.3;
+            padding: 0 20px;
+        }
+
+        /* Wrapper para as duas colunas */
+        .conteudo {
+            display: flex;
+            gap: 40px;
+        }
+
+        /* Coluna da Esquerda (Textos) */
+        .coluna-texto {
+            flex: 1.2; /* Ocupa um pouco mais de espaço que a imagem */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Lista de frases */
+        .coluna-texto ul {
+            list-style-type: disc;
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .coluna-texto li {
+            font-size: 16px;
+            font-style: italic;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        /* Bloco de contato */
+        .contato {
+            font-style: italic;
+            font-size: 16px;
+            line-height: 1.4;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+
+        /* Coluna da Direita (Imagens) */
+        .coluna-imagens {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .coluna-imagens img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            /* Se quiser cantos arredondados, descomente a linha abaixo */
+            /* border-radius: 8px; */
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .conteudo {
+                flex-direction: column;
+            }
+            .card-azul {
+                padding: 30px 20px;
+            }
+            .card-azul h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-azul">
+        <h1>Aprendendo com videogames, a mais nova forma de aprender se divertindo!</h1>
+        
+        <div class="conteudo">
+            <div class="coluna-texto">
+                <ul>
+                    <li>"Todo 'Game Over' é uma lição disfarçada: aprenda com o erro e tente novamente com mais estratégia."</li>
+                    <li>"Mais que entretenimento, os jogos treinam sua mente para resolver problemas complexos na vida real."</li>
+                    <li>"A persistência de um gamer para passar de nível é a resiliência que a vida exige."</li>
+                    <li>"Jogos de estratégia te ensinam a antecipar possibilidades e tomar decisões sob pressão."</li>
+                    <li>"Desbloqueie novas habilidades no mundo virtual e aplique o pensamento lógico no seu dia a dia."</li>
+                </ul>
+                
+                <p class="contato">
+                    Ligue: (42) 99157-1048<br>
+                    para uma companhia em<br>
+                    suas horas de jogo
+                </p>
+            </div>
+
+            <div class="coluna-imagens">
+                <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mãos segurando controle de videogame no escuro">
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Jogador de PC Gamer focado">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
